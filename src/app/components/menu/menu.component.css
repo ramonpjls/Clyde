@@ -1,0 +1,37 @@
+span{
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+    font-family: 'Amatic SC', cursive;
+    float: right;
+}
+
+mat-sidenav-container { 
+    height: 100%;
+}
+
+mat-sidenav, mat-sidevav-content {
+    padding: 16px;
+}
+
+mat-sidenav { 
+    width: 400px;
+}
+
+mat-icon{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+mat-card{
+    margin: 10px;
+    width: 300px;
+}
+
+mat-card-title{
+     text-align:center;
+}
+
+.header{
+    background-color: #1d99bb;
+}

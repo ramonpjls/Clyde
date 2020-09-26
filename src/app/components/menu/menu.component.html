@@ -1,0 +1,23 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" #sidenav>
+        <mat-card>
+            <mat-card-title> <mat-icon> room </mat-icon> 
+                Your actual position</mat-card-title>
+            <mat-card-subtitle>Longitude:  {{ dataService.Alng }}</mat-card-subtitle>
+            <mat-card-subtitle>Latitude: {{ dataService.Alat }}</mat-card-subtitle>
+        </mat-card> 
+        <mat-card>
+            <mat-card-title>Dragged Longitude</mat-card-title>
+            <mat-card-subtitle>{{ dataService.Dlng }}</mat-card-subtitle>
+            <mat-card-title>Dragged Latitude</mat-card-title>
+            <mat-card-subtitle>{{ dataService.Dlat }}</mat-card-subtitle>
+        </mat-card> 
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="header"> 
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            <span>Cl<b>y</b>de</span>
+        </div>
+        <app-mapa></app-mapa>
+    </mat-sidenav-content>
+</mat-sidenav-container>
